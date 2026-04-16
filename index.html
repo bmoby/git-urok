@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moy Proekt</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f1ea;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --accent: #2f6b5f;
+      --border: #d9d1c3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f4f1ea, #e7efe8);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(31, 31, 31, 0.08);
+    }
+
+    .hero {
+      margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(47, 107, 95, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="label">Moy perviy proekt</span>
+      <h1>Prostaya HTML stranica</h1>
+      <p>
+        Zdes ya soberayus sozdat svoy perviy proekt.
+        Ya uje sozdal pravila i dokumentaciyu.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Pravila</h2>
+        <p>Zdes mi budem pisat vse pravela raboti!</p>
+      </article>
+
+      <article class="card">
+        <h2>Dokumentaciya</h2>
+        <p>Eto moya dokumentaciya.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
